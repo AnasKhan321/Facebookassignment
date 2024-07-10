@@ -14,6 +14,7 @@ function App() {
 
     // Fetch the list of pages managed by the user
     const pagesResponse = await axios.get(`https://graph.facebook.com/${userId}/accounts?access_token=${accessToken}`);
+    console.log(pagesResponse)
 
   };
 
