@@ -5,7 +5,7 @@ import FacebookLogin from 'react-facebook-login';
 function App() {
 
 
-  const responseFacebook = (response) => {
+  const responseFacebook = async(response) => {
     console.log(response);
 
     const accessToken = response.accessToken;
