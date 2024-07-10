@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="font-bold text-xl text-center">
         <FacebookLogin
-                appId="440544722215575" // Replace with your app ID
+                appId="404300378686310" // Replace with your app ID
                 autoLoad={true}
                 fields="name,email,picture"
                 callback={responseFacebook}
