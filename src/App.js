@@ -66,6 +66,7 @@ const App = () => {
     // Fetch the list of pages managed by the user
     const pagesResponse = await axios.get(`https://graph.facebook.com/${userId}/accounts?access_token=${accessToken}`);
     setPages(pagesResponse.data.data);
+    console.log(pagesResponse.data.data)
   };
 
   const handlePageSelect = async (e) => {
@@ -75,6 +76,7 @@ const App = () => {
     const accessToken = userData.accessToken;
     const insightsResponse = await axios.get(`https://graph.facebook.com/${pageId}/insights?metric=page_fans,page_engaged_users,page_impressions,page_reactions_total&since=LAST_30_DAYS&until=TODAY&period=day&access_token=${accessToken}`);
     setInsights(insightsResponse.data.data);
+    console.log(insightsResponse.data.data)
   };
 
   return (
